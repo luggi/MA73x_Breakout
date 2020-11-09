@@ -1,0 +1,224 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensor_Magnetic:MA730 U1
+U 1 1 5FA5662C
+P 3250 3600
+F 0 "U1" H 2900 4150 50  0000 C CNN
+F 1 "MA730" H 2950 4050 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.75x1.75mm" H 3250 2650 50  0001 C CNN
+F 3 "https://www.monolithicpower.com/pub/media/document/m/a/ma730_r1.01.pdf" H 1100 5200 50  0001 C CNN
+	1    3250 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5FA58077
+P 4350 3600
+F 0 "C1" H 4465 3646 50  0000 L CNN
+F 1 "1µ" H 4465 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4388 3450 50  0001 C CNN
+F 3 "~" H 4350 3600 50  0001 C CNN
+	1    4350 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR03
+U 1 1 5FA5A5EF
+P 3250 3050
+F 0 "#PWR03" H 3250 2900 50  0001 C CNN
+F 1 "VCC" H 3267 3223 50  0000 C CNN
+F 2 "" H 3250 3050 50  0001 C CNN
+F 3 "" H 3250 3050 50  0001 C CNN
+	1    3250 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3050 3250 3100
+Wire Wire Line
+	3250 4100 3250 4200
+$Comp
+L power:GND #PWR04
+U 1 1 5FA5FAF2
+P 3250 4400
+F 0 "#PWR04" H 3250 4150 50  0001 C CNN
+F 1 "GND" H 3255 4227 50  0000 C CNN
+F 2 "" H 3250 4400 50  0001 C CNN
+F 3 "" H 3250 4400 50  0001 C CNN
+	1    3250 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4100 3150 4200
+Wire Wire Line
+	3150 4200 3250 4200
+Connection ~ 3250 4200
+Wire Wire Line
+	3250 4200 3250 4400
+Wire Wire Line
+	3250 4200 3350 4200
+Wire Wire Line
+	3350 4200 3350 4100
+$Comp
+L power:VCC #PWR05
+U 1 1 5FA62247
+P 4350 3400
+F 0 "#PWR05" H 4350 3250 50  0001 C CNN
+F 1 "VCC" H 4367 3573 50  0000 C CNN
+F 2 "" H 4350 3400 50  0001 C CNN
+F 3 "" H 4350 3400 50  0001 C CNN
+	1    4350 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5FA627A5
+P 4350 3800
+F 0 "#PWR06" H 4350 3550 50  0001 C CNN
+F 1 "GND" H 4355 3627 50  0000 C CNN
+F 2 "" H 4350 3800 50  0001 C CNN
+F 3 "" H 4350 3800 50  0001 C CNN
+	1    4350 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3800 4350 3750
+Wire Wire Line
+	4350 3450 4350 3400
+$Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 5FA6742D
+P 1450 3650
+F 0 "J1" H 1368 3125 50  0000 C CNN
+F 1 "Conn_01x06" H 1368 3216 50  0000 C CNN
+F 2 "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical" H 1450 3650 50  0001 C CNN
+F 3 "~" H 1450 3650 50  0001 C CNN
+	1    1450 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 5FA68032
+P 1650 3150
+F 0 "#PWR01" H 1650 3000 50  0001 C CNN
+F 1 "VCC" H 1667 3323 50  0000 C CNN
+F 2 "" H 1650 3150 50  0001 C CNN
+F 3 "" H 1650 3150 50  0001 C CNN
+	1    1650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5FA68C10
+P 1850 3150
+F 0 "#PWR02" H 1850 2900 50  0001 C CNN
+F 1 "GND" H 1855 2977 50  0000 C CNN
+F 2 "" H 1850 3150 50  0001 C CNN
+F 3 "" H 1850 3150 50  0001 C CNN
+	1    1850 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 3150 1650 3350
+NoConn ~ 3750 3300
+NoConn ~ 3750 3400
+NoConn ~ 3750 3500
+NoConn ~ 3750 3700
+NoConn ~ 3750 3800
+NoConn ~ 3750 3900
+NoConn ~ 2750 3900
+NoConn ~ 2750 3800
+Wire Wire Line
+	1850 3450 1650 3450
+Wire Wire Line
+	1850 3150 1850 3450
+Wire Wire Line
+	1650 3550 2150 3550
+Wire Wire Line
+	2150 3550 2150 3500
+Wire Wire Line
+	2150 3500 2750 3500
+Wire Wire Line
+	1650 3650 2050 3650
+Wire Wire Line
+	2050 3650 2050 3400
+Wire Wire Line
+	2050 3400 2750 3400
+Wire Wire Line
+	1650 3750 2350 3750
+Wire Wire Line
+	2350 3750 2350 3600
+Wire Wire Line
+	2350 3600 2750 3600
+Wire Wire Line
+	1650 3850 2250 3850
+Wire Wire Line
+	2250 3850 2250 3300
+Wire Wire Line
+	2250 3300 2750 3300
+Text Label 1650 3550 0    50   ~ 0
+SCLK
+Text Label 1650 3650 0    50   ~ 0
+MISO
+Text Label 1650 3750 0    50   ~ 0
+CS
+Text Label 1650 3850 0    50   ~ 0
+MOSI
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FAA2773
+P 2450 2150
+F 0 "H2" H 2550 2196 50  0000 L CNN
+F 1 "MountingHole" H 2550 2105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2450 2150 50  0001 C CNN
+F 3 "~" H 2450 2150 50  0001 C CNN
+	1    2450 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FAA2D47
+P 2450 1950
+F 0 "H1" H 2550 1996 50  0000 L CNN
+F 1 "MountingHole" H 2550 1905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2450 1950 50  0001 C CNN
+F 3 "~" H 2450 1950 50  0001 C CNN
+	1    2450 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5FAAA134
+P 2450 2350
+F 0 "H3" H 2550 2396 50  0000 L CNN
+F 1 "MountingHole" H 2550 2305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2450 2350 50  0001 C CNN
+F 3 "~" H 2450 2350 50  0001 C CNN
+	1    2450 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5FAAA590
+P 2450 2550
+F 0 "H4" H 2550 2596 50  0000 L CNN
+F 1 "MountingHole" H 2550 2505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2450 2550 50  0001 C CNN
+F 3 "~" H 2450 2550 50  0001 C CNN
+	1    2450 2550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
